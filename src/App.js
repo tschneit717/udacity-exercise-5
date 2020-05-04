@@ -16,9 +16,10 @@ class App extends Component {
   mirrorText = (text) => {
     let tempString = text.split("")
     tempString.reverse()
-    console.log(tempString)
+    let reversedString = tempString.join("")
+    console.log(reversedString)
     this.setState(() => ({
-      reversedString: tempString
+      reversedString: reversedString
     }))
   }
   render() {
